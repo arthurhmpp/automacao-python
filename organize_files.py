@@ -16,4 +16,4 @@ for file in file_list:
     from_path = os.path.join(location, file)
     to_path = os.path.join(location, file.split('.')[-1], file)
 
-    os.replace(from_path, to_path)
+    os.replace(from_path, to_path)  
