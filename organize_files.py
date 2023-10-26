@@ -2,9 +2,7 @@ import os
 
 location = "/home/arthurhmp/Downloads/"
 
-file_list = [i for i in os.listdir(location) if os.path.isfile and '.py' not in i]
-
-file_list
+file_list = [i for i in os.listdir(location) if os.path.isfile(os.path.join(location, i))]
 
 types = list(set([i.split('.')[-1] for i in file_list]))
 
